@@ -16,6 +16,10 @@
   border: 1px solid rgb(64, 66, 78);
   border-radius: 16px;
 
+  @media screen and (max-width: 800px) {
+    margin-top: 0;
+  }
+
 
   @media (max-width: $breakpoint768) {
     padding: 0;

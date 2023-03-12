@@ -52,3 +52,121 @@ function fixedNav() {
   }
 }
 window.addEventListener('scroll', fixedNav)
+
+
+function selectBtns() {
+  const blockTransfer = document.querySelector('[data-transfer]');
+  const blockNft = document.querySelector('[data-nft]');
+  const blockLiquidity = document.querySelector('[data-liquidity]');
+
+  const btnTransfer = document.querySelector('[data-transfer-btn]')
+  const btnNft = document.querySelector('[data-nft-btn]')
+  const btnLiquidity = document.querySelector('[data-liquidity-btn]')
+
+  btnTransfer.addEventListener('click', () => {
+    btnTransfer.classList.add('active')
+    btnNft.classList.remove('active')
+    btnLiquidity.classList.remove('active')
+
+    blockTransfer.style.display = 'block';
+    blockNft.style.display = 'none';
+    blockLiquidity.style.display = 'none';
+  })
+
+  btnNft.addEventListener('click', () => {
+    btnNft.classList.add('active')
+    btnTransfer.classList.remove('active')
+    btnLiquidity.classList.remove('active')
+
+    blockNft.style.display = 'block';
+    blockTransfer.style.display = 'none';
+    blockLiquidity.style.display = 'none';
+  })
+
+  btnLiquidity.addEventListener('click', () => {
+    btnLiquidity.classList.add('active')
+    btnNft.classList.remove('active')
+    btnTransfer.classList.remove('active')
+
+    blockLiquidity.style.display = 'flex';
+    blockNft.style.display = 'none';
+    blockTransfer.style.display = 'none';
+  })
+}
+
+selectBtns();
+
+// function reverse() {
+//   const container = document.querySelector('[data-transfer]')
+//   const reverseBtn = document.querySelector('[data-reverse]')
+//   const transferBlocks = document.querySelector('.transfer__blocks')
+
+//   if (!container) {
+//     return null
+//   }
+
+//   reverseBtn.addEventListener('click', () => {
+//     transferBlocks.classList.toggle('reverse')
+//   })
+// }
+
+// reverse();
+
+const modal = new GraphModal();
+
+function removeIsOpenModal() {
+  const modalWrapper = document.querySelector('.graph-modal')
+  let selectSourses = document.querySelectorAll('.select-sourse__item');
+  let modalWalletTokens = document.querySelectorAll('.wallet-modal__token');
+
+  selectSourses.forEach(selectSourse => {
+    selectSourse.addEventListener('click', () => {
+      modalWrapper.classList.remove('is-open')
+    })
+  });
+
+  modalWalletTokens.forEach(modalWalletToken => {
+    modalWalletToken.addEventListener('click', () => {
+      modalWrapper.classList.remove('is-open')
+    })
+  });
+}
+
+removeIsOpenModal();
+
+function themeDesktop() {
+  //Toggle theme
+  const themeBtn = document.querySelector('.navbar-right__theme');
+
+  if (!themeBtn) {
+    return null
+  }
+
+
+  themeBtn.addEventListener('click', () => {
+    let element = document.body;
+    element.classList.toggle('light-mode')
+    themeBtn.classList.toggle('light-mode')
+  });
+}
+
+themeDesktop();
+
+
+function themeMobile() {
+  //Toggle theme
+  const themeBtn = document.querySelector('.menu__item--theme');
+
+  if (!themeBtn) {
+    return null
+  }
+
+
+  themeBtn.addEventListener('click', () => {
+    let element = document.body;
+    element.classList.toggle('light-mode')
+    themeBtn.classList.toggle('light-mode')
+  });
+}
+
+themeMobile();

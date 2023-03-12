@@ -27,3 +27,168 @@ $burgerActiveColor: 'white';
   --select-border-color: #40424E;
   --select-bg-color: rgb(35, 37, 48);
 }
+
+.main__body.light-mode {
+  //colors
+  --primary-color: rgb(14, 16, 18);
+  --primary-color-2: rgb(14, 16, 18);
+  --white-color: #2E3A59;
+
+  --grey-color: rgb(143, 155, 179);
+  --bg-color: rgb(23, 23, 26);
+  --bg-color-2: #232530;
+  --bg-body: linear-gradient(rgb(247, 248, 254) 0%, rgb(231, 235, 246) 100%);
+  --select-color: #393a43;
+  --select-border-color: #40424E;
+  --select-bg-color: rgb(35, 37, 48);
+
+  & .menu__item-sublink {
+    background-color: #fff;
+  }
+
+  & .transactions__btn.active {
+    color: #fff;
+  }
+
+  & .transfer {
+    background-color: #fff;
+    border: 1px solid rgb(237, 241, 247);
+
+  }
+
+  & .block-info {
+    background: rgb(245, 247, 252);
+  }
+
+  & .transfer__block-selected {
+    background: rgb(245, 247, 252);
+  }
+
+  & .transfer__btn {
+    color: #fff;
+  }
+
+  & .navbar-right__history {
+    background-color: #fff;
+  }
+
+  & .navbar-right__connect {
+    color: #fff;
+  }
+
+  & .navbar-right__dots {
+    background-color: #fff;
+  }
+
+  & .navbar-right__dark {
+    background-color: #fff;
+  }
+
+  & .select-sourse,
+  & .wallet-modal,
+  & .token-selected {
+    background-color: #fff;
+  }
+
+  & .select-sourse__item,
+  & .wallet-modal__token,
+  & .token-selected__item,
+  & .nft,
+  & .nft__selected {
+    background-color: #fff;
+    border: 1px solid rgb(237, 241, 247);
+  }
+
+  & .select-sourse__item--active,
+  & .token-selected__item--active {
+    border: 1px solid rgb(14, 16, 18);
+  }
+
+  & .token-selected__src {
+    background-color: #fff;
+  }
+
+  & .token-selected__attantion {
+    background-color: #fff;
+  }
+
+  & .graph-modal {
+    background-color: rgba(96, 96, 96, 0.9);
+  }
+
+  & .logo__link-img {
+    display: none;
+
+    @media (max-width:1800px) {
+      display: block;
+    }
+  }
+
+  & .logo__link-img--dark {
+    display: block;
+
+    @media (max-width:1800px) {
+      display: none;
+    }
+  }
+
+  & .menu__item-img--light,
+  & .navbar-right__history-img {
+    display: none;
+  }
+
+  & .menu__item-img--dark,
+  & .navbar-right__history-img--dark {
+    display: block;
+  }
+
+  & .menu__item-sublink--mob {
+    color: #8f9bb3;
+  }
+
+  & .menu__item-sublist--mob {
+    border-color: #EDF1F7;
+  }
+
+  & .menu__item-btn--light {
+    display: none;
+  }
+
+  & .menu__item-btn--dark {
+    display: flex;
+  }
+
+  & .navbar-right__light {
+    display: none;
+  }
+
+  & .navbar-right__dark {
+    display: block;
+  }
+
+  & .liquidity__transaction,
+  & .liquidity__sorts,
+  & .liquidity__show,
+  & .liquidity__search,
+  & .liquidity__sorts-mobile {
+    background-color: #fff;
+    border: 1px solid rgb(237, 241, 247);
+  }
+
+  & .liquidity__search-input {
+    background-color: #fff;
+  }
+
+  & .liquidity__show-slider:before {
+    background-color: #fff;
+  }
+
+  & .liquidity__transaction-blocks--arrow {
+    border-color: rgb(237, 241, 247);
+  }
+
+  @media (max-width: $breakpoint768) {
+    background: rgb(255, 255, 255);
+  }
+
+}

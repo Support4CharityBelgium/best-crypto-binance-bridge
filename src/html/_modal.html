@@ -1,9 +1,1674 @@
 <!-- Modal -->
-<div class="modal__wrapper">
-    <div class="modal">
-        <div class="modal__close"> <img src="./img/cancel.svg" alt="cancel" width="10px" height="10px"></div>
-        <div class="modal__title"><span>Заголовок 2</span> </div>
-        <div class="modal__body">
+
+<div class="graph-modal">
+  <div class="graph-modal__container graph-modal__container--wallet" data-graph-animation="fadeInUp" role="dialog"
+    aria-modal="true" data-graph-target="wallet">
+    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <!-- контент модального окна -->
+      <div class="wallet-modal">
+        <h3 class="wallet-modal__title">
+          Connect Your Wallet
+        </h3>
+
+        <div class="wallet-modal__tokens">
+          <div class="wallet-modal__token">
+            <img class="wallet-modal__token-img" src="./img/modal/Metamask.svg" alt="Metamask">
+
+            <h4 class="wallet-modal__token-title">
+              MetaMask
+            </h4>
+
+            <div class="wallet-modal__arrow">
+              <svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em"
+                fill="currentColor" aria-hidden="true">
+                <path
+                  d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="wallet-modal__token">
+            <img class="wallet-modal__token-img" src="./img/modal/tp.jpeg" alt="tp">
+
+            <h4 class="wallet-modal__token-title">
+              TokenPocket
+            </h4>
+
+            <div class="wallet-modal__arrow">
+              <svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em"
+                fill="currentColor" aria-hidden="true">
+                <path
+                  d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="wallet-modal__token">
+            <img class="wallet-modal__token-img" src="./img/modal/coinbase.png" alt="Coinbase Wallet">
+
+            <h4 class="wallet-modal__token-title">
+              Coinbase Wallet
+            </h4>
+
+            <div class="wallet-modal__arrow">
+              <svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em"
+                fill="currentColor" aria-hidden="true">
+                <path
+                  d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="wallet-modal__token">
+            <img class="wallet-modal__token-img" src="./img/modal/connect.png" alt="connect">
+
+            <h4 class="wallet-modal__token-title">
+              WalletConnect
+            </h4>
+
+            <div class="wallet-modal__arrow">
+              <svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em"
+                fill="currentColor" aria-hidden="true">
+                <path
+                  d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="wallet-modal__token">
+            <img class="wallet-modal__token-img" src="./img/modal/clover.svg" alt="clover">
+
+            <h4 class="wallet-modal__token-title">
+              Clover
+            </h4>
+
+            <div class="wallet-modal__arrow">
+              <svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em"
+                fill="currentColor" aria-hidden="true">
+                <path
+                  d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+
+          <div class="wallet-modal__token">
+            <img class="wallet-modal__token-img" src="./img/modal/imToken.svg" alt="imToken">
+
+            <h4 class="wallet-modal__token-title">
+              imToken
+            </h4>
+
+            <div class="wallet-modal__arrow">
+              <svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em"
+                fill="currentColor" aria-hidden="true">
+                <path
+                  d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="wallet-modal__token">
+            <img class="wallet-modal__token-img" src="./img/modal/math.png" alt="Math Wallet">
+
+            <h4 class="wallet-modal__token-title">
+              Math Wallet
+            </h4>
+
+            <div class="wallet-modal__arrow">
+              <svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em"
+                fill="currentColor" aria-hidden="true">
+                <path
+                  d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="wallet-modal__token">
+            <img class="wallet-modal__token-img" src="./img/modal/onto.jpeg" alt="ONTO Wallet">
+
+            <h4 class="wallet-modal__token-title">
+              ONTO Wallet
+            </h4>
+
+            <div class="wallet-modal__arrow">
+              <svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em"
+                fill="currentColor" aria-hidden="true">
+                <path
+                  d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="wallet-modal__token">
+            <img class="wallet-modal__token-img" src="./img/modal/coin98.jpeg" alt="Coin98 Wallet">
+
+            <h4 class="wallet-modal__token-title">
+              Coin98 Wallet
+            </h4>
+
+            <div class="wallet-modal__arrow">
+              <svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em"
+                fill="currentColor" aria-hidden="true">
+                <path
+                  d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="wallet-modal__token">
+            <img class="wallet-modal__token-img" src="./img/modal/dcent.webp" alt="D'CENT Wallet">
+
+            <h4 class="wallet-modal__token-title">
+              D'CENT Wallet
+            </h4>
+
+            <div class="wallet-modal__arrow">
+              <svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em"
+                fill="currentColor" aria-hidden="true">
+                <path
+                  d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="wallet-modal__token">
+            <img class="wallet-modal__token-img" src="./img/modal/safepal.jpeg" alt="SafePal">
+
+            <h4 class="wallet-modal__token-title">
+              SafePal
+            </h4>
+
+            <div class="wallet-modal__arrow">
+              <svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em"
+                fill="currentColor" aria-hidden="true">
+                <path
+                  d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="wallet-modal__token">
+            <img class="wallet-modal__token-img" src="./img/modal/bitkeep.svg" alt="Bitkeep">
+
+            <h4 class="wallet-modal__token-title">
+              Bitkeep
+            </h4>
+
+            <div class="wallet-modal__arrow">
+              <svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em"
+                fill="currentColor" aria-hidden="true">
+                <path
+                  d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                </path>
+              </svg>
+            </div>
+          </div>
         </div>
+
+        <div class="wallet-modal__risk">
+          *Beta software. Use at your own risk!
+        </div>
+
+
+        <div class="wallet-modal__footer">
+          <p class="wallet-modal__footer-text">
+            By connecting, I accept
+          </p>
+
+          <a class="wallet-modal__footer-link" href="#">Terms of Use</a>
+        </div>
+      </div>
     </div>
+  </div>
+
+
+
+
+  <div class="graph-modal__container graph-modal__container--token-selected" data-graph-animation="fadeInUp"
+    role="dialog" aria-modal="true" data-graph-target="token-selected">
+    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <!-- контент модального окна -->
+      <div class="token-selected">
+        <h3 class="token-selected__title">
+          Select a token
+        </h3>
+
+        <input class="token-selected__src" type="search" placeholder="Search token by name or address">
+
+        <div class="token-selected__attantion">
+          <div class="token-selected__attantion-icon">
+            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.825 14.375C5.2375 15.1625 6.0625 15.6875 7 15.6875C7.9375 15.6875 8.7625 15.1625 9.175 14.375H4.825ZM13.5625 12.725C13.525 11.4875 13.0375 10.475 12.1375 9.6875L12.0625 9.6125V6.875C12.0625 4.8125 10.825 3.05 9.0625 2.2625C8.9875 1.175 8.0875 0.3125 7 0.3125C5.9125 0.3125 5.0125 1.175 4.9375 2.2625C3.175 3.05 1.9375 4.8125 1.9375 6.875V9.6125L1.8625 9.6875C0.925 10.5125 0.4375 11.6 0.4375 12.875C0.4375 13.175 0.7 13.4375 1 13.4375H13C13.3 13.4375 13.5625 13.175 13.5625 12.875V12.725Z"
+                fill="#8F9BB3" />
+            </svg>
+
+          </div>
+
+          <div class="token-selected__attantion-text">
+            Below is the supported token list from BNB Chain to Ethereum Mainnet.
+            <span>
+              More tokens
+            </span>
+            can be found if you select other chains.
+          </div>
+        </div>
+
+        <div class="token-selected__list">
+          <div class="token-selected__item token-selected__item--active">
+            <img class="token-selected__item-img" src="./img/modal/USDT.png" alt="USDT">
+
+            <h4 class="token-selected__item-title">
+              Binance-Peg BSC-USD
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              USDT
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/USDC.png" alt="USDC">
+
+            <h4 class="token-selected__item-title">
+              Binance-Peg USD Coin
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              USDC
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/ETH.png" alt="ETH.png">
+
+            <h4 class="token-selected__item-title">
+              Binance-Peg Ethereum Token
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              ETH
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/AI.png" alt="AI.png">
+
+            <h4 class="token-selected__item-title">
+              Flourishing AI
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              AI
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/AKRO.png" alt="AKRO.png">
+
+            <h4 class="token-selected__item-title">
+              Akropolis
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              AKRO
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/ANML.png" alt="ANML.png">
+
+            <h4 class="token-selected__item-title">
+              Animal Concerts Token
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              ANML
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/AVG.png" alt="AVG.png">
+
+            <h4 class="token-selected__item-title">
+              Avocado DAO Token
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              AVG
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/BZZ.png" alt="BZZ.png">
+
+            <h4 class="token-selected__item-title">
+              BZZ
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              BZZ
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/CEC.png" alt="CEC.png">
+
+            <h4 class="token-selected__item-title">
+              Chemix Ecosystem Coin
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              CEC
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/DF.png" alt="DF.png">
+
+            <h4 class="token-selected__item-title">
+              dForce
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              DF
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/DODO.jpg" alt="DODO.jpg">
+
+            <h4 class="token-selected__item-title">
+              DODO Bird
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              DODO
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/Domi.png" alt="Domi.png">
+
+            <h4 class="token-selected__item-title">
+              Domi
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              Domi
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/DTR.png" alt="DTR.png">
+
+            <h4 class="token-selected__item-title">
+              DOTORI
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              DTR
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/FRAX.png" alt="FRAX.png">
+
+            <h4 class="token-selected__item-title">
+              Frax
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              FRAX
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/GHX.png" alt="GHX.png">
+
+            <h4 class="token-selected__item-title">
+              GamerCoin
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              GHX
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/GNO.png" alt="GNO.png">
+
+            <h4 class="token-selected__item-title">
+              Gnosis
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              GNO
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/GOV.png" alt="GOV.png">
+
+            <h4 class="token-selected__item-title">
+              GovWorld
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              GOV.png
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/HUH.png" alt="HUH.png">
+
+            <h4 class="token-selected__item-title">
+              HUH Token
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              HUH
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/JPEG.png" alt="JPEG.png">
+
+            <h4 class="token-selected__item-title">
+              JPEG
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              JPEG
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/LEAP.png" alt="LEAP.png">
+
+            <h4 class="token-selected__item-title">
+              LEAP
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              LEAP
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/LUSD.png" alt="LUSD.png">
+
+            <h4 class="token-selected__item-title">
+              Liquity USD
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              LUSD
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/MASK.png" alt="MASK.png">
+
+            <h4 class="token-selected__item-title">
+              Mask Network
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              MASK
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/MCB.png" alt="MCB.png">
+
+            <h4 class="token-selected__item-title">
+              MCDEX Token
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              MCB
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/MELOS.png" alt="MELOS.png">
+
+            <h4 class="token-selected__item-title">
+              Melos Studio
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              MELOS
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/MGH.png" alt="MGH.png">
+
+            <h4 class="token-selected__item-title">
+              MetaGameHub
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              MGH
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/MSU.png" alt="MSU.png">
+
+            <h4 class="token-selected__item-title">
+              Metasens Universal Unit
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              MSU
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/MUXLP.png" alt="MUXLP.png">
+
+            <h4 class="token-selected__item-title">
+              MUX LP
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              MUXLP
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/nmx.png" alt="nmx.png">
+
+            <h4 class="token-selected__item-title">
+              NMX
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              NMX
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/NYM.png" alt="NYM.png">
+
+            <h4 class="token-selected__item-title">
+              NYM
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              NYM
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/OOKI.png" alt="OOKI.png">
+
+            <h4 class="token-selected__item-title">
+              Ooki
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              OOKI
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/PBR.png" alt="PBR.png">
+
+            <h4 class="token-selected__item-title">
+              PolkaBridge
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              PBR
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/PEOPLE.png" alt="PEOPLE.png">
+
+            <h4 class="token-selected__item-title">
+              PeopleDAO
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              PEOPLE
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/PERL.png" alt="PERL.png">
+
+            <h4 class="token-selected__item-title">
+              PERL.eco
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              PERL
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/PERP.png" alt="PERP.png">
+
+            <h4 class="token-selected__item-title">
+              Perpetual Protocol
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              PERP
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/PSP.png" alt="PSP.png">
+
+            <h4 class="token-selected__item-title">
+              ParaSwap
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              PSP
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/PSTAKE.png" alt="PSTAKE.png">
+
+            <h4 class="token-selected__item-title">
+              pSTAKE Finance
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              PSTAKE
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/REEF.png" alt="REEF.png">
+
+            <h4 class="token-selected__item-title">
+              Reef Finance
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              REEF
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/WREVA.png" alt="WREVA.png">
+
+            <h4 class="token-selected__item-title">
+              Reva Token
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              WREVA
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/S2K.png" alt="S2K.png">
+
+            <h4 class="token-selected__item-title">
+              S2K
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              S2K.png
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/SHI.png" alt="SHI.png">
+
+            <h4 class="token-selected__item-title">
+              Shirtum
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              SHI
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/SOS.png" alt="SOS.png">
+
+            <h4 class="token-selected__item-title">
+              OpenDAO
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              SOS
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/UCG.png" alt="UCG.png">
+
+            <h4 class="token-selected__item-title">
+              Universe Crystal Gene
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              UCG
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/USX.png" alt="USX.png">
+
+            <h4 class="token-selected__item-title">
+              dForce USD
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              USX
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/WING.png" alt="WING.png">
+
+            <h4 class="token-selected__item-title">
+              Wing Finance
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              WING
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/WOO.png" alt="WOO.png">
+
+            <h4 class="token-selected__item-title">
+              WOO Network
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              WOO
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/iUSD.png" alt="iUSD.png">
+
+            <h4 class="token-selected__item-title">
+              iZUMi Bond USD
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              iUSD
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/IZI.png" alt="IZI.png">
+
+            <h4 class="token-selected__item-title">
+              Izumi Finance
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              IZI
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/muxBTC.png" alt="muxBTC.png">
+
+            <h4 class="token-selected__item-title">
+
+              BTC mToken
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              muxBTC
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/muxETH.png" alt="muxETH.png">
+
+            <h4 class="token-selected__item-title">
+              ETH mToken
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              muxETH
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/muxUSD.png" alt="muxUSD.png">
+
+            <h4 class="token-selected__item-title">
+              USD mToken
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              muxUSD
+            </div>
+          </div>
+
+          <div class="token-selected__item">
+            <img class="token-selected__item-img" src="./img/modal/oneDODO.png" alt="oneDODO.png">
+
+            <h4 class="token-selected__item-title">
+              oneDODO
+            </h4>
+
+            <div class="token-selected__item-currency">
+              <span>--</span>
+
+              oneDODO
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="graph-modal__container graph-modal__container--select-sourse" data-graph-animation="fadeInUp"
+    role="dialog" aria-modal="true" data-graph-target="select-sourse">
+    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <!-- контент модального окна -->
+      <div class="select-sourse">
+        <h3 class="select-sourse__title">
+          Select Source Chain
+        </h3>
+
+        <input class="token-selected__src select-sourse__src" type="search"
+          placeholder="Search chain by name or chain ID">
+
+        <div class="select-sourse__list">
+          <div class="select-sourse__item select-sourse__item--active">
+            <img class="select-sourse__item-img" src="./img/select/ETH.png" alt="ETH.png">
+
+            <h4 class="select-sourse__item-title">
+              Ethereum Mainnet
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/Astar.png" alt="Astar.png">
+
+            <h4 class="select-sourse__item-title">
+              Astar
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/BNB-chain.png" alt="BNB-chain.png">
+
+            <h4 class="select-sourse__item-title">
+              BNB-Chain
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/Avalanche.png" alt="Avalanche.png">
+
+            <h4 class="select-sourse__item-title">
+              Avalanche
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/Polygon.png" alt="Polygon.png">
+
+            <h4 class="select-sourse__item-title">
+              Polygon
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/arbitrum.png" alt="arbitrum.png">
+
+            <h4 class="select-sourse__item-title">
+              Arbitrum One
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/OP.png" alt="OP.png">
+
+            <h4 class="select-sourse__item-title">
+              Optimism
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/aptos.png" alt="aptos.png">
+
+            <h4 class="select-sourse__item-title">
+              Aptos
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/Fantom.png" alt="Fantom.png">
+
+            <h4 class="select-sourse__item-title">
+              Fantom
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/FLOW.png" alt="FLOW.png">
+
+            <h4 class="select-sourse__item-title">
+              Flow Mainnet
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/metis.png" alt="metis.png">
+
+            <h4 class="select-sourse__item-title">
+              Metis Mainnet
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/oasis.png" alt="oasis.png">
+
+            <h4 class="select-sourse__item-title">
+              Oasis Emerald
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/evmos.png" alt="evmos.png">
+
+            <h4 class="select-sourse__item-title">
+              Evmos
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/Aurora.png" alt="Aurora.png">
+
+            <h4 class="select-sourse__item-title">
+              Aurora
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/moonbeam.png" alt="moonbeam.png">
+
+            <h4 class="select-sourse__item-title">
+              Moonbeam
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/moonriver.png" alt="moonriver.png">
+
+            <h4 class="select-sourse__item-title">
+              Moonriver
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/boba.png" alt="boba.png">
+
+            <h4 class="select-sourse__item-title">
+              Boba Network
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/okex-new.png" alt="okex-new.png">
+
+            <h4 class="select-sourse__item-title">
+              OKXChain
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/heco.png" alt="heco.png">
+
+            <h4 class="select-sourse__item-title">
+              Heco
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/Celo.png" alt="Celo.png">
+
+            <h4 class="select-sourse__item-title">
+              Celo
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/Gnosis.png" alt="Gnosis.png">
+
+            <h4 class="select-sourse__item-title">
+              Gnosis Chain
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/ape.png" alt="ape.png">
+
+            <h4 class="select-sourse__item-title">
+              Ape Chain
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/clover.png" alt="clover.png">
+
+            <h4 class="select-sourse__item-title">
+              Clover
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/conflux.png" alt="conflux.png">
+
+            <h4 class="select-sourse__item-title">
+              Conflux
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/crab.png" alt="crab.png">
+
+            <h4 class="select-sourse__item-title">
+              Crab Smart Chain
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/kava.png" alt="kava.png">
+
+            <h4 class="select-sourse__item-title">
+              Kava EVM Co-Chain
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/klaytn.png" alt="klaytn.png">
+
+            <h4 class="select-sourse__item-title">
+              Klaytn
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/nhzTq4K.png" alt="nhzTq4K.png">
+
+            <h4 class="select-sourse__item-title">
+              Milkomeda A1 (Algorand)
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/milkomeda.png" alt="milkomeda.png">
+
+            <h4 class="select-sourse__item-title">
+              Milkomeda C1 (Cardano)
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/nervos.png" alt="nervos.png">
+
+            <h4 class="select-sourse__item-title">
+              Nervos Godwoken
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/OASYS3.png" alt="OASYS3.png">
+
+            <h4 class="select-sourse__item-title">
+              Oasys
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/ontology-new.png" alt="ontology-new.png">
+
+            <h4 class="select-sourse__item-title">
+              Ontology EVM
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/platon.png" alt="platon.png">
+
+            <h4 class="select-sourse__item-title">
+              PlatON
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/REI.png" alt="REI.png">
+
+            <h4 class="select-sourse__item-title">
+              REI Network
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/SPSTestnet.png" alt="SPSTestnet.png">
+
+            <h4 class="select-sourse__item-title">
+              SPS
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/sx.png" alt="sx.png">
+
+            <h4 class="select-sourse__item-title">
+              SX Network
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/shiden.png" alt="shiden.png">
+
+            <h4 class="select-sourse__item-title">
+              Shiden
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/swimmer.png" alt="swimmer.png">
+
+            <h4 class="select-sourse__item-title">
+              Swimmer Network
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/zkSyncV2.png" alt="zkSyncV2.png">
+
+            <h4 class="select-sourse__item-title">
+              zkSync Era Mainnet
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="graph-modal__container graph-modal__container--select-destination" data-graph-animation="fadeInUp"
+    role="dialog" aria-modal="true" data-graph-target="select-destination">
+    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <!-- контент модального окна -->
+      <div class="select-sourse  select-destination">
+        <h3 class="select-sourse__title">
+          Select Destination Chain
+        </h3>
+
+        <input class="token-selected__src select-sourse__src" type="search"
+          placeholder="Search chain by name or chain ID">
+
+        <div class="token-selected__attantion">
+          <div class="token-selected__attantion-icon">
+            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.825 14.375C5.2375 15.1625 6.0625 15.6875 7 15.6875C7.9375 15.6875 8.7625 15.1625 9.175 14.375H4.825ZM13.5625 12.725C13.525 11.4875 13.0375 10.475 12.1375 9.6875L12.0625 9.6125V6.875C12.0625 4.8125 10.825 3.05 9.0625 2.2625C8.9875 1.175 8.0875 0.3125 7 0.3125C5.9125 0.3125 5.0125 1.175 4.9375 2.2625C3.175 3.05 1.9375 4.8125 1.9375 6.875V9.6125L1.8625 9.6875C0.925 10.5125 0.4375 11.6 0.4375 12.875C0.4375 13.175 0.7 13.4375 1 13.4375H13C13.3 13.4375 13.5625 13.175 13.5625 12.875V12.725Z"
+                fill="#8F9BB3" />
+            </svg>
+
+          </div>
+
+          <div class="token-selected__attantion-text">
+            Below shows the destination chains that enables at least one token transfer from BNB Chain. More chains can
+            be found if you select other source chains.
+          </div>
+        </div>
+
+        <div class="select-sourse__list">
+          <div class="select-sourse__item select-sourse__item--active">
+            <img class="select-sourse__item-img" src="./img/select/ETH.png" alt="ETH.png">
+
+            <h4 class="select-sourse__item-title">
+              Ethereum Mainnet
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/Astar.png" alt="Astar.png">
+
+            <h4 class="select-sourse__item-title">
+              Astar
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/BNB-chain.png" alt="BNB-chain.png">
+
+            <h4 class="select-sourse__item-title">
+              BNB-Chain
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/Avalanche.png" alt="Avalanche.png">
+
+            <h4 class="select-sourse__item-title">
+              Avalanche
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/Polygon.png" alt="Polygon.png">
+
+            <h4 class="select-sourse__item-title">
+              Polygon
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/arbitrum.png" alt="arbitrum.png">
+
+            <h4 class="select-sourse__item-title">
+              Arbitrum One
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/OP.png" alt="OP.png">
+
+            <h4 class="select-sourse__item-title">
+              Optimism
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/aptos.png" alt="aptos.png">
+
+            <h4 class="select-sourse__item-title">
+              Aptos
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/Fantom.png" alt="Fantom.png">
+
+            <h4 class="select-sourse__item-title">
+              Fantom
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/FLOW.png" alt="FLOW.png">
+
+            <h4 class="select-sourse__item-title">
+              Flow Mainnet
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/metis.png" alt="metis.png">
+
+            <h4 class="select-sourse__item-title">
+              Metis Mainnet
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/oasis.png" alt="oasis.png">
+
+            <h4 class="select-sourse__item-title">
+              Oasis Emerald
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/evmos.png" alt="evmos.png">
+
+            <h4 class="select-sourse__item-title">
+              Evmos
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/Aurora.png" alt="Aurora.png">
+
+            <h4 class="select-sourse__item-title">
+              Aurora
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/moonbeam.png" alt="moonbeam.png">
+
+            <h4 class="select-sourse__item-title">
+              Moonbeam
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/moonriver.png" alt="moonriver.png">
+
+            <h4 class="select-sourse__item-title">
+              Moonriver
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/boba.png" alt="boba.png">
+
+            <h4 class="select-sourse__item-title">
+              Boba Network
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/okex-new.png" alt="okex-new.png">
+
+            <h4 class="select-sourse__item-title">
+              OKXChain
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/heco.png" alt="heco.png">
+
+            <h4 class="select-sourse__item-title">
+              Heco
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/Celo.png" alt="Celo.png">
+
+            <h4 class="select-sourse__item-title">
+              Celo
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/Gnosis.png" alt="Gnosis.png">
+
+            <h4 class="select-sourse__item-title">
+              Gnosis Chain
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/ape.png" alt="ape.png">
+
+            <h4 class="select-sourse__item-title">
+              Ape Chain
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/clover.png" alt="clover.png">
+
+            <h4 class="select-sourse__item-title">
+              Clover
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/conflux.png" alt="conflux.png">
+
+            <h4 class="select-sourse__item-title">
+              Conflux
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/crab.png" alt="crab.png">
+
+            <h4 class="select-sourse__item-title">
+              Crab Smart Chain
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/kava.png" alt="kava.png">
+
+            <h4 class="select-sourse__item-title">
+              Kava EVM Co-Chain
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/klaytn.png" alt="klaytn.png">
+
+            <h4 class="select-sourse__item-title">
+              Klaytn
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/nhzTq4K.png" alt="nhzTq4K.png">
+
+            <h4 class="select-sourse__item-title">
+              Milkomeda A1 (Algorand)
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/milkomeda.png" alt="milkomeda.png">
+
+            <h4 class="select-sourse__item-title">
+              Milkomeda C1 (Cardano)
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/nervos.png" alt="nervos.png">
+
+            <h4 class="select-sourse__item-title">
+              Nervos Godwoken
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/OASYS3.png" alt="OASYS3.png">
+
+            <h4 class="select-sourse__item-title">
+              Oasys
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/ontology-new.png" alt="ontology-new.png">
+
+            <h4 class="select-sourse__item-title">
+              Ontology EVM
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/platon.png" alt="platon.png">
+
+            <h4 class="select-sourse__item-title">
+              PlatON
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/REI.png" alt="REI.png">
+
+            <h4 class="select-sourse__item-title">
+              REI Network
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/SPSTestnet.png" alt="SPSTestnet.png">
+
+            <h4 class="select-sourse__item-title">
+              SPS
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/sx.png" alt="sx.png">
+
+            <h4 class="select-sourse__item-title">
+              SX Network
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/shiden.png" alt="shiden.png">
+
+            <h4 class="select-sourse__item-title">
+              Shiden
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/swimmer.png" alt="swimmer.png">
+
+            <h4 class="select-sourse__item-title">
+              Swimmer Network
+            </h4>
+          </div>
+
+          <div class="select-sourse__item">
+            <img class="select-sourse__item-img" src="./img/select/zkSyncV2.png" alt="zkSyncV2.png">
+
+            <h4 class="select-sourse__item-title">
+              zkSync Era Mainnet
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

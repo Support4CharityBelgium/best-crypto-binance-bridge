@@ -13,6 +13,10 @@
   max-width: 1200px;
   color: var(--white-color);
 
+  @media screen and (max-width: 800px) {
+    margin-top: 0;
+  }
+
   // .liquidity__inner
 
   &__inner {}

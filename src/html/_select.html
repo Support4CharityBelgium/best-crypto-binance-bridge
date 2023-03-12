@@ -1,4 +1,4 @@
-<div class="select__transfer transfer" style="display: none;">
+<div class="select__transfer transfer" data-transfer>
   <div class="transfer__inner">
     <div class="transfer__blocks">
       <div class="transfer__block transfer__block--from">
@@ -7,7 +7,7 @@
             From
           </label>
 
-          <div class="transfer__block-selected">
+          <div class="transfer__block-selected" data-graph-animation="fadeInUp" data-graph-path="select-sourse">
             <div class="transfer__block-icon">
               <img class="transfer__block-img" src="./img/transfer/BNB-chain.png" alt="BNB-chain">
             </div>
@@ -26,9 +26,9 @@
             </div>
           </div>
 
-          <div class="transfer__block-setting">
+          <!-- <div class="transfer__block-setting">
             <img class="transfer__block-setting-img" src="./img/transfer/setting.svg" alt="setting">
-          </div>
+          </div> -->
         </div>
         <div class="transfer__block-info block-info">
           <div class="block-info__header">
@@ -46,7 +46,7 @@
           <div class="block-info__footer">
             <input class="block-info__input" type="number" value="0.0">
 
-            <div class="block-info__selected">
+            <div class="block-info__selected" data-graph-animation="fadeInUp" data-graph-path="token-selected">
               <div class="block-info__icon">
                 <img class="transfer__block-img" src="./img/transfer/ETH.png" alt="ETH">
               </div>
@@ -68,7 +68,7 @@
         </div>
       </div>
 
-      <div class="transfer__reverse">
+      <div class="transfer__reverse" data-reverse>
         <img class="transfer__reverse-img" src="./img/transfer/reverse.svg" alt="reverse">
       </div>
 
@@ -78,7 +78,7 @@
             To
           </label>
 
-          <div class="transfer__block-selected">
+          <div class="transfer__block-selected" data-graph-animation="fadeInUp" data-graph-path="select-destination">
             <div class="transfer__block-icon">
               <img class="transfer__block-img" src="./img/transfer/ETH.png" alt="ETH">
             </div>
@@ -123,11 +123,12 @@
     </div>
 
 
-    <button type="button" class="transfer__btn">Connect Wallet</button>
+    <button type="button" class="transfer__btn" data-graph-animation="fadeInUp" data-graph-path="wallet">Connect
+      Wallet</button>
   </div>
 </div>
 
-<div class="select__nft nft" style="display: none;">
+<div class="select__nft nft" style="display: none;" data-nft>
   <div class="nft__inner">
     <h1 class="nft__title">
       NFT Bridge
@@ -196,11 +197,12 @@
       </div>
     </div>
 
-    <button type="button" class="transfer__btn">Connect Wallet</button>
+    <button type="button" class="transfer__btn" data-graph-animation="fadeInUp" data-graph-path="wallet">Connect
+      Wallet</button>
   </div>
 </div>
 
-<div class="select__liquidity liquidity">
+<div class="select__liquidity liquidity" style="display: none;" data-liquidity>
   <div class="liquidity__inner">
     <div class="liquidity__header">
       <div class="liquidity__header-info">
@@ -218,7 +220,8 @@
         </div>
       </div>
 
-      <button type="button" class="transfer__btn liquidity__btn">Connect Wallet</button>
+      <button type="button" class="transfer__btn liquidity__btn" data-graph-animation="fadeInUp"
+        data-graph-path="wallet">Connect Wallet</button>
     </div>
 
     <div class="liquidity__main">
